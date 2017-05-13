@@ -1,0 +1,65 @@
+.auroramenu li > ul {
+    display: none;
+}
+    
+.auroramenu-default, 
+.auroramenu-default ul {
+    padding: 0;
+    list-style-type: none;
+}
+    
+.auroramenu-default > li > a {
+    border-bottom: 1px #177245 solid;
+    border-radius: 8px;
+}
+    
+.auroramenu-default > li > a:after {
+    content:"▼";
+    float: right;
+    font-size: 0.7em;
+}
+    
+.auroramenu-default > li > a.open:after {
+    content:"▲";
+}    
+    
+.auroramenu-default a {
+    color: #167970 !important;
+    background-color: #C7FCEC;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+    
+.auroramenu-default a:hover,
+.auroramenu-default a:focus {
+    text-decoration: none;
+}
+    
+.auroramenu-default a:hover {
+    background-color: #00FFFF;
+}
+    
+.auroramenu-default ul a {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    color: #000 !important;
+    background-color: #00CCCC;
+    font-size: 0.9em;
+    padding-left: 20px;
+    border-bottom: 1px #4261B8 solid;
+    border-radius: 4px;
+}
+
+.auroramenu-default ul a:hover, .auroramenu-default ul a:focus, .auroramenu-default ul a:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);   
+}
